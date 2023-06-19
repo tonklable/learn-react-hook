@@ -53,16 +53,12 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        {/* <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
+        <h1
+          style={{color: "lightblue"}}
         >
-          Learn React
-        </a> */}
-        <h1 style={{ color: "lightblue" }}>Demo Component</h1>
-        <NameContext.Provider value={{ name, setName }}>
+          Demo Component
+        </h1>
+        <NameContext.Provider value={{name, setName}}>
           <WindowWidthContext.Provider value={windowWidth}>
             <WindowHeightContext.Provider value={windowHeight}>
               <Display />
