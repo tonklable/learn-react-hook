@@ -32,9 +32,9 @@ function App() {
 
   useEffect(() => {
     console.log("re-rendered");
-    // return () => {
-    //   console.log("unmounted");
-    // }
+    return () => {
+      console.log("unmounted");
+    }
   });
 
   useEffect(() => {
